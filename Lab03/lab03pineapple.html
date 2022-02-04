@@ -19,6 +19,10 @@
   ></script>
 </head>
 <style>
+  *{
+    box-sizing: border-box;
+
+  }
 .container {
     background-color: salmon;
     color: white;
@@ -27,14 +31,28 @@
 .span_style {
         font-weight: bolder;
       }
-      h1 {
+      .h1_style {
         background-color: green;
         border-color: black;
         border-width: 3px;
         border-style: solid;
         text-align: center;
         color: white;
+        margin-bottom: 0px;
     }
+    .column1{
+width: 30%;
+background: rgb(204,204,255);
+float: left;
+height: 75vh;
+    }
+    .columns2{
+background: aquamarine;
+float: left;
+width: 70%;
+height: 75vh;
+    }
+    
 </style>
 
 <body>
@@ -66,12 +84,33 @@
             </div>
           </div>
         </nav>
-    <div id="container">
-    <h1>Citites</h1>
+        <h1>Part 4</h1>
+    <div>
+    <h1 class="h1_style">Citites</h1>
+</div>
+<div class="column1">
+  <div>
+    <h1><span class="span_style">nav</span></h1>
+    <a href="#">
+        Vancouver
+        <a href="#">
+            <br>
+            London
+            <a href="#">
+                <br>
+                Paris
+                </a>
+            </div>
+</div>
+<div class="columns2">
+<p> <img style="float: right;" src="images/Pineapple.jpg" width="150px"> lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet asperiores maxime reiciendis pariatur consectetur alias in, doloribus quibusdam. Unde numquam animi dolores expedita officia necessitatibus blanditiis incidunt cupiditate tempore.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum error asperiores eos accusantium temporibus officiis. Autem qui esse quas accusantium corporis, perspiciatis dolorum at, quasi totam veritatis facilis in.
+Perferendis, reprehenderit sed? Dolores distinctio mollitia asperiores similique atque ipsa ullam eum perspiciatis? Facilis eius enim possimus ex ab odit voluptatem. Molestias quaerat veniam dolore nihil distinctio dolorem amet illum!
+</p>
 </div>
 <div>
     <footer>
-<h1>Footer</h1>
+<h1 class="h1_style">Footer</h1>
     </footer>
 </div>
 </body>
