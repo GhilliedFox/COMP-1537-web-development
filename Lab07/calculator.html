@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+      button {
+        background-image: linear-gradient(
+          to right,
+          #314755 0%,
+          #26a0da 51%,
+          #314755 100%
+        );
+      }
+      button {
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+      }
+      button:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+      }
+      html {
+        background: #100a1c;
+        background-image: radial-gradient(
+            50% 30% ellipse at center top,
+            #201e40 0%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          radial-gradient(
+            60% 50% ellipse at center bottom,
+            #261226 0%,
+            #100a1c 100%
+          );
+        background-attachment: fixed;
+        color: #6cacc5;
+      }
+
+      body {
+        color: #6cb0c5;
+        font: 300 18px/1.6 "Source Sans Pro", sans-serif;
+        margin: 0;
+        padding: 5em 0 2em;
+        text-align: center;
+      }
+      .div-centre {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7%;
+      }
+      .div-result-box {
+        margin: 0px 600px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+      }
+
+.div-history{
+  overflow: auto;
+  height: fit-content;
+  margin: 0px 200px;
+  border-radius: 10px;
+  height: 250px;
+  text-align: center;
+}
+.div-history-vertical {
+box-sizing: border-box;
+margin: 0px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <label for="firstvalue">First operand</label>
+
+    <input type="text" id="firstvalue" name="firstvalue"/>
+    <br />
+    <br />
+    <label for="secondvalue">Second operand</label>
+
+    <input type="text" id="secondvalue" name="secondvalue"/>
+    <br />
+    <div class="div-centre">
+      <button id="add">+</button>
+      <button id="subtract">-</button>
+      <button id="divide">/</button>
+      <button id="multiply">*</button>
+      <button id="increase">Increase Font</button>
+      <button id="decrease">Decrease Font</button>
+    </div>
+    <br />
+    <div class="div-result-box">
+    <p>
+      <h1>result:</h1><span id="output"></span>
+    </p>
+    </div>
+<div class="div-history">
+    <h1>History:</h1>
+
+    <div>
+<span class="history"></span>
+    </div>
+      </div>
+      <script src="code.js"></script>
+  </body>
+</html>
